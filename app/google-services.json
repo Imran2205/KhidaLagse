@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "594757106299",
+    "firebase_url": "https://khidalagse-36aa4.firebaseio.com",
+    "project_id": "khidalagse-36aa4",
+    "storage_bucket": "khidalagse-36aa4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:594757106299:android:59501cba6c01dd49b6c0de",
+        "android_client_info": {
+          "package_name": "com.invincible.khidalagse"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "594757106299-r1ibg8ct6d0b55p3vrl70qfl4sl2jer0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.invincible.khidalagse",
+            "certificate_hash": "901bd696df95fcda335631663a5bca209c6db00a"
+          }
+        },
+        {
+          "client_id": "594757106299-leq06nvipudrjkdkr4af66thsptlbnkh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC63tqcT70CY_8Oq7xMXsFLJT7BNpy94SQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "594757106299-leq06nvipudrjkdkr4af66thsptlbnkh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

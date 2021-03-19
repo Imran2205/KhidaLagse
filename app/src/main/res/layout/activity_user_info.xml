@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserInfoActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/reg_bg"
+        android:id="@+id/reg_top_bg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textColor="#FFF"
+            android:text="@string/info_ins"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:id="@+id/userinfo_ins"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/userinfo_ins"
+            android:textSize="15sp"
+            android:textColor="#FFF"
+            android:text="@string/info_rq"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal" />
+
+    </RelativeLayout>
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/reg_top_bg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/in_name_lin_lay"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="75sp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/name"
+                    android:text="Name:"
+                    android:textSize="22sp"
+                    android:textColor="#000"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"/>
+                <EditText
+                    android:id="@+id/in_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:singleLine="true"
+                    android:hint="name"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="20dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/in_email_lin_lay"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="75sp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/email"
+                    android:text="Email:"
+                    android:textSize="22sp"
+                    android:textColor="#000"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"/>
+                <EditText
+                    android:id="@+id/in_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:singleLine="true"
+                    android:textSize="20sp"
+                    android:hint="email"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="20dp"
+                    android:ems="10"
+                    android:inputType="textEmailAddress"
+                    />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/address_lin_lay"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/address_head"
+                    android:text="Address"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:layout_centerHorizontal="true"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/address_head"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/in_add_line1_lay"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="85sp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/add_line1"
+                        android:text="Line1:"
+                        android:textSize="22sp"
+                        android:textColor="#000"
+                        android:layout_marginTop="10dp"
+                        android:textStyle="bold"/>
+                    <EditText
+                        android:id="@+id/in_add_line1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:singleLine="true"
+                        android:hint="house no, road, ave"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="10dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_below="@+id/in_add_line1_lay"
+                    android:id="@+id/in_add_line2_lay"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="85sp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/add_line2"
+                        android:text="Line2:"
+                        android:textSize="22sp"
+                        android:textColor="#000"
+                        android:layout_marginTop="10dp"
+                        android:textStyle="bold"/>
+                    <EditText
+                        android:id="@+id/in_add_line2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:singleLine="true"
+                        android:textSize="18sp"
+                        android:hint="area(e.g.Mirpur DOHS,Mirpur-12)"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="10dp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_below="@+id/in_add_line2_lay"
+                    android:id="@+id/in_add_zip_lay"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="85sp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/add_zip"
+                        android:text="Zip:"
+                        android:textSize="22sp"
+                        android:textColor="#000"
+                        android:layout_marginTop="10dp"
+                        android:textStyle="bold"/>
+                    <EditText
+                        android:id="@+id/in_add_zip"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:singleLine="true"
+                        android:textSize="18sp"
+                        android:hint="area zip code"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="10dp"
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_below="@+id/in_add_zip_lay"
+                    android:id="@+id/in_add_dist_lay"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="85sp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/add_dist"
+                        android:text="District"
+                        android:textSize="22sp"
+                        android:textColor="#000"
+                        android:layout_marginTop="10dp"
+                        android:textStyle="bold"/>
+                    <EditText
+                        android:id="@+id/in_add_dist"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:singleLine="true"
+                        android:textSize="18sp"
+                        android:hint="district"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="10dp"
+                        />
+
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/user_info_save_btn"
+                    android:text="Save"
+                    android:textSize="25sp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/in_add_dist_lay"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/circle_button"
+                    android:textColor="#FFF"/>
+
+            </RelativeLayout>
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

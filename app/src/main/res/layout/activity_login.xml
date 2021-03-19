@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/reg_bg"
+        android:id="@+id/login_top_bg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/login_ins"
+            android:layout_height="wrap_content"
+            android:text="@string/login_ins"
+            android:textColor="#FFF"
+            android:textSize="25sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="55dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/login_req"
+            android:layout_below="@+id/login_ins"
+            android:text="@string/login_rq"
+            android:textColor="#FFF"
+            android:textSize="15sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:gravity="center_horizontal" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_top_bg"
+        android:layout_marginTop="0dp">
+
+
+        <RelativeLayout
+            android:id="@+id/phoneAuth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="15dp"
+            android:padding="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Phone number"
+                    android:id="@+id/login_phone_textview"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <com.hbb20.CountryCodePicker
+                        android:id="@+id/ccp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:ccp_autoDetectCountry="true" />
+
+                    <EditText
+                        android:id="@+id/phoneText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="phone"
+                        android:inputType="phone"
+                        android:singleLine="true" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/sendButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/phoneAuth"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:onClick="sendCode"
+            android:text="Send Code"
+            android:textColor="#FFF"
+            android:visibility="visible"
+            android:background="@drawable/circle_button"/>
+
+        <Button
+            android:id="@+id/resendButton"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/phoneAuth"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:onClick="resendCode"
+            android:text="Resend Code"
+            android:textColor="#FFF"
+            android:visibility="invisible"
+            android:background="@drawable/circle_button"/>
+
+        <EditText
+            android:id="@+id/codeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/phoneAuth"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:ems="10"
+            android:hint="Code"
+            android:inputType="number"
+            android:textColor="#000"
+            android:textColorHint="#000"
+            android:visibility="invisible"
+            />
+
+        <Button
+            android:id="@+id/verifyButton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/codeText"
+            android:layout_alignStart="@+id/codeText"
+            android:layout_alignLeft="@+id/codeText"
+            android:layout_alignEnd="@+id/codeText"
+            android:layout_alignRight="@+id/codeText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="-2dp"
+            android:layout_marginLeft="-2dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="2dp"
+
+            android:layout_marginRight="2dp"
+            android:onClick="verifyCode"
+            android:text="Verify Code"
+            android:textColor="#FFF"
+            android:visibility="invisible"
+            android:background="@drawable/circle_button"/>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
